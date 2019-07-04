@@ -32,7 +32,8 @@
     "opentype.js": "0.4.4",
     "socket.io": "1.4.8",
     "superagent": "0.21.0",
-    "vd": "0.1.0"
+    "vd": "0.1.0",
+    "snyk": "^1.189.0"
   },
   "license": "MIT",
   "devDependencies": {
@@ -59,7 +60,9 @@
     "test": "mocha && eslint lib/**",
     "postinstall": "gulp",
     "build": "gulp",
-    "start": "chmod +x bin/slackin && ./bin/slackin"
+    "start": "chmod +x bin/slackin && ./bin/slackin",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "now": {
     "type": "npm",
@@ -74,5 +77,6 @@
       "GOOGLE_CAPTCHA_SECRET",
       "GOOGLE_CAPTCHA_SITEKEY"
     ]
-  }
+  },
+  "snyk": true
 }
