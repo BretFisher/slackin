@@ -4,3 +4,6 @@ dist
 
 # logs
 npm-debug.log
+
+# other
+.git

@@ -1,0 +1,15 @@
+version: '2.4'
+
+services:
+  slackin:
+    build: .
+    ports:
+    - 3000:3000
+    environment:
+    - SLACK_API_TOKEN=${SLACK_API_TOKEN}
+    - SLACK_SUBDOMAIN=dockermastery
+    - GOOGLE_CAPTCHA_SECRET=6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe
+    - GOOGLE_CAPTCHA_SITEKEY=6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI
+    - SLACK_COC=https://github.com/BretFisher/udemy-docker-mastery/blob/master/slack-chat/coc.md
+    # command: env
+
