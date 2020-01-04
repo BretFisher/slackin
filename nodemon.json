@@ -1,0 +1,4 @@
+{
+    "watch": ["lib", "bin"],
+    "exec": "gulp && ./bin/slackin --coc \"$SLACK_COC\" --port $PORT $SLACK_SUBDOMAIN $SLACK_API_TOKEN $GOOGLE_CAPTCHA_SECRET"
+}
